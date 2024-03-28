@@ -11,10 +11,105 @@ Ontology(<http://purl.obolibrary.org/obo/cryoeto/imports/cob_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/cob/releases/2023-11-16/cob.owl>)
 Annotation(owl:versionInfo "2024-03-28")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/COB_0000078>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000058>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/COB_based_on>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/COB_0000078> (concretizes)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000078> "concretizes")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/RO_0000058>)
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000136> (is about)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/COB_based_on> <http://purl.obolibrary.org/obo/IAO_0000136> "http://purl.obolibrary.org/obo/IAO_0000136")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (characteristic of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "characteristic of"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (has characteristic)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "has characteristic")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0000053> "https://github.com/oborel/obo-relations/pull/284")
+InverseFunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000058> (is concretized as)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000058> "is concretized as"@en)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000020> (characteristic)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "characteristic"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000020> "https://github.com/OBOFoundry/COB/issues/65")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000020> "https://github.com/oborel/obo-relations/pull/284")
+SubClassOf(Annotation(rdfs:comment "We should name the inverse in COB and avoid the confusing inverse(..) construct") <http://purl.obolibrary.org/obo/BFO_0000020> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/RO_0000053>) owl:Thing))
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000120> (information representation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/COB_based_on> <http://purl.obolibrary.org/obo/COB_0000120> "http://purl.obolibrary.org/obo/IAO_0000015")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/COB_0000120> "Pier 'representational entity'")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/COB_0000120> "This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000120> "information representation")
+EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0000120> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/IAO_0000030>))
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000120> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000122> (physical information carrier)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000122> "physical information carrier")
+EquivalentClasses(<http://purl.obolibrary.org/obo/COB_0000122> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/COB_0000078> <http://purl.obolibrary.org/obo/IAO_0000030>)))
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000122> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000030> "Pier: 'data, information or knowledge'. OR 'representation")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information")
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> owl:Thing))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/COB_0000078>) <http://purl.obolibrary.org/obo/COB_0000120>))
 
 
 )

@@ -1,0 +1,381 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/cryoeto/cryoeto-simple.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/licenses/unspecified"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Cryo Electron Tomography Ontology"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2024-03-28"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/cryoeto-simple.json"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000000",
+      "lbl" : "root node",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000001",
+      "lbl" : "TEM Grid",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A transmission electron microscopy (TEM) grid is a small, thin support structure typically made of materials like copper, gold, or other metals. These grids are used to hold the specimen being examined under the electron microscope.\n\nTEM grids are usually very thin, often on the order of tens to hundreds of micrometers thick, with regularly spaced holes or a continuous mesh structure. The holes or mesh allow the electron beam to pass through the specimen, enabling high-resolution imaging and analysis of the specimen's internal structure at the nanometer scale."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "EM Grid"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "Grid"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "Transmission Electron Microscopy Grid"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "ChatGPT + manual curation"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000002",
+      "lbl" : "CryoET Electron Microscope",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "CryoET microscopes share many features with standard electron microscopes, but are specifically optimized for imaging frozen-hydrated biological samples in three dimensions, with capabilities for cryo-sample preparation, temperature control, high-resolution imaging, and tomographic reconstruction. These specialized capabilities enable researchers to study the structure and organization of biological specimens in their native hydrated state with unprecedented detail.\n\nMain specializations of CryoET Electron Microscopes are:\n\n1. Sample Preparation: The most significant difference lies in the sample preparation method. CryoET microscopes are equipped with specialized sample preparation equipment such as plunge-freezers and cryo-transfer systems. These tools allow researchers to rapidly freeze biological specimens in vitreous ice, preserving them in their native hydrated state without the need for chemical fixation or dehydration. In contrast, standard electron microscopes typically require samples to be dehydrated, stained, and embedded in resin for imaging, which can introduce artifacts and alter the native structure of the sample.\n\n2. Temperature Control: CryoET microscopes are designed to maintain low temperatures throughout the imaging process to prevent sample degradation and maintain the vitrified state of the specimen. They are equipped with cryo-stages or cryo-holders that allow precise temperature control, typically operating at temperatures below -150°C. Standard electron microscopes typically operate at room temperature or slightly elevated temperatures, as they are not optimized for maintaining samples at cryogenic temperatures.\n\n3. High-Resolution Imaging: CryoET microscopes are capable of high-resolution imaging of biological structures in three dimensions. They are often equipped with field emission electron guns, high-performance electron optics, and high-speed detectors to achieve high-resolution imaging of cryo-preserved samples. Additionally, CryoET microscopes may have specialized capabilities such as energy filters for imaging specific elements or contrast mechanisms tailored for biological specimens. While standard electron microscopes are also capable of high-resolution imaging, they may not be optimized for imaging frozen-hydrated samples or may lack the necessary cryo-sample handling capabilities.\n\n4. Tomographic Reconstruction: CryoET microscopes are equipped with software and computational tools for reconstructing three-dimensional tomograms from tilt series of images acquired at different angles. These tools enable researchers to visualize the internal structure of biological specimens in three dimensions at nanometer-scale resolution. Standard electron microscopes may lack the specialized software and computational resources required for tomographic reconstruction of cryo-preserved samples."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000003",
+      "lbl" : "TEM Grid-mounted specimen",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A material specimen that has been mounted on a TEM Grid for subsequent imaging"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000004",
+      "lbl" : "Vitrification for Electron Microscopy",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Vitrification is the process of converting a substance into a glass-like, non-crystalline solid state, typically by rapid cooling. In the context of cryogenic electron microscopy (cryo-EM) and cryo-electron tomography (cryo-ET), vitrification refers to the rapid freezing of a sample, typically in a thin layer of aqueous solution, to form an amorphous, glassy state of ice without the formation of ice crystals.\n\nDuring vitrification in cryo-EM and cryo-ET, a small volume of the sample solution containing the specimen of interest is applied onto a specialized grid. Excess solution is then blotted away to leave behind a thin layer of the sample suspended across holes or a grid pattern on the grid. The grid is then rapidly plunged into a cryogen, such as liquid ethane or propane, which freezes the sample almost instantaneously.\n\nThe rapid freezing process prevents water molecules from organizing into ice crystals, instead trapping them in a disordered, vitreous state. This vitrified state preserves the native structure of the sample, including biological macromolecules, cells, or tissues, in their near-native hydrated environment. Vitrification is crucial in cryo-EM and cryo-ET because it minimizes structural distortions and artifacts that can occur with conventional sample preparation methods, such as chemical fixation and dehydration.\n\nBy preserving samples in a vitrified state, cryo-EM and cryo-ET allow researchers to visualize biological structures at high resolution and in near-native conditions, providing valuable insights into their molecular architecture and function."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "ChatGPT + editing"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000005",
+      "lbl" : "Mounting specimen on TEM Grid",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The planned process of placing a specimen on a TEM grid in preparation for electron microscopy imaging of that specimen."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000006",
+      "lbl" : "Focussed Ion Beam Milling",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Focused ion beam (FIB) milling is a technique used in electron microscopy to prepare specimens for analysis, particularly for transmission electron microscopy (TEM) and scanning electron microscopy (SEM). \n\nFIB milling involves the use of a focused beam of ions, typically gallium ions, to mill away material from a sample surface. The high-energy ions sputter atoms from the surface of the specimen, gradually removing material layer by layer.\n\nThe ion beam is then focused onto the area of interest on the sample surface. The focused gallium ions bombard the surface, causing sputtering of material. The milling process can be controlled with high precision, allowing for precise removal of material to expose specific features or regions of interest within the sample.\n\nFIB milling can be used to thin down a sample to electron-transparent thickness for TEM analysis. By gradually milling away material from one side of the sample, a thin lamella or cross-section can be created, revealing internal structures for high-resolution imaging in TEM. This technique is particularly useful for studying materials, nanostructures, biological samples, and devices.\n\nOverall, FIB milling is a powerful technique for preparing samples for electron microscopy analysis, allowing for precise thinning, cross-sectioning, and manipulation of specimens with nanometer-scale resolution. It has applications across various fields, including materials science, nanotechnology, biology, and semiconductor research."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "FIB Milling"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "ChatGPT + editing"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000007",
+      "lbl" : "Focussed Ion Beam Milled Lamella",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "This is the material entity generated by an FIB milling (CRYOETO:0000006) process. FIB milling is used to thin down a sample to electron-transparent thickness for TEM analysis. By gradually milling away material from one side of the sample, a thin lamella or cross-section can be created, revealing internal structures for high-resolution imaging in Transmission Electron Microscopy."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000008",
+      "lbl" : "FIB Milled Lamella lift-out and remount",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The process whereby a section of an FIB-milled lamella is excised and remounted on another TEM-Grid for subsequent imaging."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000009",
+      "lbl" : "Plunge Vitrification",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000010",
+      "lbl" : "High Pressure Freezing",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000011",
+      "lbl" : "High Pressure Freezing 'Sandwich Array' for CryoEM",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "For High Pressure Freezing in CryoEM, a common method is to create “sandwiches” using metal carriers. These carriers hold the sample between two thin metal discs or grids."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000012",
+      "lbl" : "CryoEM Planchette",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The planchettes are small pieces of metal that the grid and sample are sandwiched in between. Pre-treatment of the planchettes has significance."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Utz Ermel"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000013",
+      "lbl" : "High Pressure Freezing Planchette Assembly for CryoEM",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000014",
+      "lbl" : "CryoET imaging assay",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Cryo-electron tomography (CryoET) imaging involves acquiring a series of images of a frozen-hydrated biological specimen at different tilt angles relative to the electron beam. These images are then used to reconstruct a three-dimensional (3D) tomographic volume of the specimen. \n\nThis is an imaging assay that acts on a material entity input specimen (a cryo-EM grid containing a vitrified specimen) to generate an information artifact (a 'tilt-series' of images). \n\nThe specimen is initially imaged at a zero-degree tilt angle, where the electron beam is perpendicular to the sample surface. This provides a reference image of the specimen's structure.\n\nThe specimen is then tilted at various angles relative to the electron beam. Typically, tilt angles ranging from -60 to +60 degrees are used (depending on the microscope's capabilities and the desired coverage of the specimen). At each tilt angle, a series of images are acquired by scanning the electron beam across the specimen's area of interest. During tilt series acquisition, parameters such as electron dose, defocus, and pixel size are carefully controlled to optimize image quality while minimizing radiation damage to the specimen."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "ChatGPT + editing"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000015",
+      "lbl" : "Tilt Series",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000016",
+      "lbl" : "CryoET Tilt Series",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000017",
+      "lbl" : "TEM Image",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000018",
+      "lbl" : "Image Motion Correction Process",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000019",
+      "lbl" : "Tomographic Alignment Process",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000020",
+      "lbl" : "Aligned CryoET Tilt Series",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000021",
+      "lbl" : "Tomogram Reconstruction Process",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000022",
+      "lbl" : "volumetric image data set",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000024",
+      "lbl" : "CryoET Tomogram",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000025",
+      "lbl" : "data item annotation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A data item that can be localized within the content of another data item and also provides additional information about the content referenced by the annotation. (e.g., a NLP annotation on a passage of text, a bounding box on an image)."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000026",
+      "lbl" : "volumetric image annotation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A data item annotation constructed by adding information to a delineated a subvolume within a volumemetric image."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000027",
+      "lbl" : "CryoET tomogram annotation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A volumetric image annotation providing additional information about a subvolume within a CryoET tomogram."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000028",
+      "lbl" : "annotation set",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000029",
+      "lbl" : "volumetric image annotation set",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000030",
+      "lbl" : "tomogram annotation set",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "definition",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "lbl" : "alternative term",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."
+        },
+        "comments" : [ "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "alternative label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "OBO Operations committee"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "lbl" : "definition source",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition source"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "lbl" : "description",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "lbl" : "license",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "lbl" : "title",
+      "type" : "PROPERTY"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000025"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000029",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000028"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CRYOETO_0000029"
+    } ]
+  } ]
+}

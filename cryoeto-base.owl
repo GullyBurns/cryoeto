@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cryoeto/cryoeto-base.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cryoeto/cryoeto-base.owl"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cryoeto/cryoeto-base.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/cryoeto-base.owl"/>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>None</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <dcterms:title>Cryo Electron Tomography Ontology</dcterms:title>
+        <owl:versionInfo>2024-03-28</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000000">
+        <rdfs:label xml:lang="en">root node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A transmission electron microscopy (TEM) grid is a small, thin support structure typically made of materials like copper, gold, or other metals. These grids are used to hold the specimen being examined under the electron microscope.
+
+TEM grids are usually very thin, often on the order of tens to hundreds of micrometers thick, with regularly spaced holes or a continuous mesh structure. The holes or mesh allow the electron beam to pass through the specimen, enabling high-resolution imaging and analysis of the specimen&apos;s internal structure at the nanometer scale.</obo:IAO_0000115>
+        <obo:IAO_0000118>EM Grid</obo:IAO_0000118>
+        <obo:IAO_0000118>Grid</obo:IAO_0000118>
+        <obo:IAO_0000118>Transmission Electron Microscopy Grid</obo:IAO_0000118>
+        <obo:IAO_0000119>ChatGPT + manual curation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">TEM Grid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000990"/>
+        <obo:IAO_0000115>CryoET microscopes share many features with standard electron microscopes, but are specifically optimized for imaging frozen-hydrated biological samples in three dimensions, with capabilities for cryo-sample preparation, temperature control, high-resolution imaging, and tomographic reconstruction. These specialized capabilities enable researchers to study the structure and organization of biological specimens in their native hydrated state with unprecedented detail.
+
+Main specializations of CryoET Electron Microscopes are:
+
+1. Sample Preparation: The most significant difference lies in the sample preparation method. CryoET microscopes are equipped with specialized sample preparation equipment such as plunge-freezers and cryo-transfer systems. These tools allow researchers to rapidly freeze biological specimens in vitreous ice, preserving them in their native hydrated state without the need for chemical fixation or dehydration. In contrast, standard electron microscopes typically require samples to be dehydrated, stained, and embedded in resin for imaging, which can introduce artifacts and alter the native structure of the sample.
+
+2. Temperature Control: CryoET microscopes are designed to maintain low temperatures throughout the imaging process to prevent sample degradation and maintain the vitrified state of the specimen. They are equipped with cryo-stages or cryo-holders that allow precise temperature control, typically operating at temperatures below -150°C. Standard electron microscopes typically operate at room temperature or slightly elevated temperatures, as they are not optimized for maintaining samples at cryogenic temperatures.
+
+3. High-Resolution Imaging: CryoET microscopes are capable of high-resolution imaging of biological structures in three dimensions. They are often equipped with field emission electron guns, high-performance electron optics, and high-speed detectors to achieve high-resolution imaging of cryo-preserved samples. Additionally, CryoET microscopes may have specialized capabilities such as energy filters for imaging specific elements or contrast mechanisms tailored for biological specimens. While standard electron microscopes are also capable of high-resolution imaging, they may not be optimized for imaging frozen-hydrated samples or may lack the necessary cryo-sample handling capabilities.
+
+4. Tomographic Reconstruction: CryoET microscopes are equipped with software and computational tools for reconstructing three-dimensional tomograms from tilt series of images acquired at different angles. These tools enable researchers to visualize the internal structure of biological specimens in three dimensions at nanometer-scale resolution. Standard electron microscopes may lack the specialized software and computational resources required for tomographic reconstruction of cryo-preserved samples.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CryoET Electron Microscope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000953"/>
+        <obo:IAO_0000115>A material specimen that has been mounted on a TEM Grid for subsequent imaging</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">TEM Grid-mounted specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001953"/>
+        <obo:IAO_0000115>Vitrification is the process of converting a substance into a glass-like, non-crystalline solid state, typically by rapid cooling. In the context of cryogenic electron microscopy (cryo-EM) and cryo-electron tomography (cryo-ET), vitrification refers to the rapid freezing of a sample, typically in a thin layer of aqueous solution, to form an amorphous, glassy state of ice without the formation of ice crystals.
+
+During vitrification in cryo-EM and cryo-ET, a small volume of the sample solution containing the specimen of interest is applied onto a specialized grid. Excess solution is then blotted away to leave behind a thin layer of the sample suspended across holes or a grid pattern on the grid. The grid is then rapidly plunged into a cryogen, such as liquid ethane or propane, which freezes the sample almost instantaneously.
+
+The rapid freezing process prevents water molecules from organizing into ice crystals, instead trapping them in a disordered, vitreous state. This vitrified state preserves the native structure of the sample, including biological macromolecules, cells, or tissues, in their near-native hydrated environment. Vitrification is crucial in cryo-EM and cryo-ET because it minimizes structural distortions and artifacts that can occur with conventional sample preparation methods, such as chemical fixation and dehydration.
+
+By preserving samples in a vitrified state, cryo-EM and cryo-ET allow researchers to visualize biological structures at high resolution and in near-native conditions, providing valuable insights into their molecular architecture and function.</obo:IAO_0000115>
+        <obo:IAO_0000119>ChatGPT + editing</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Vitrification for Electron Microscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000073"/>
+        <obo:IAO_0000115>The planned process of placing a specimen on a TEM grid in preparation for electron microscopy imaging of that specimen.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Mounting specimen on TEM Grid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000073"/>
+        <obo:IAO_0000115>Focused ion beam (FIB) milling is a technique used in electron microscopy to prepare specimens for analysis, particularly for transmission electron microscopy (TEM) and scanning electron microscopy (SEM). 
+
+FIB milling involves the use of a focused beam of ions, typically gallium ions, to mill away material from a sample surface. The high-energy ions sputter atoms from the surface of the specimen, gradually removing material layer by layer.
+
+The ion beam is then focused onto the area of interest on the sample surface. The focused gallium ions bombard the surface, causing sputtering of material. The milling process can be controlled with high precision, allowing for precise removal of material to expose specific features or regions of interest within the sample.
+
+FIB milling can be used to thin down a sample to electron-transparent thickness for TEM analysis. By gradually milling away material from one side of the sample, a thin lamella or cross-section can be created, revealing internal structures for high-resolution imaging in TEM. This technique is particularly useful for studying materials, nanostructures, biological samples, and devices.
+
+Overall, FIB milling is a powerful technique for preparing samples for electron microscopy analysis, allowing for precise thinning, cross-sectioning, and manipulation of specimens with nanometer-scale resolution. It has applications across various fields, including materials science, nanotechnology, biology, and semiconductor research.</obo:IAO_0000115>
+        <obo:IAO_0000118>FIB Milling</obo:IAO_0000118>
+        <obo:IAO_0000119>ChatGPT + editing</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Focussed Ion Beam Milling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000953"/>
+        <obo:IAO_0000115>This is the material entity generated by an FIB milling (CRYOETO:0000006) process. FIB milling is used to thin down a sample to electron-transparent thickness for TEM analysis. By gradually milling away material from one side of the sample, a thin lamella or cross-section can be created, revealing internal structures for high-resolution imaging in Transmission Electron Microscopy.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Focussed Ion Beam Milled Lamella</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000073"/>
+        <obo:IAO_0000115>The process whereby a section of an FIB-milled lamella is excised and remounted on another TEM-Grid for subsequent imaging.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">FIB Milled Lamella lift-out and remount</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000004"/>
+        <rdfs:label xml:lang="en">Plunge Vitrification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000004"/>
+        <rdfs:label xml:lang="en">High Pressure Freezing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000953"/>
+        <obo:IAO_0000115>For High Pressure Freezing in CryoEM, a common method is to create “sandwiches” using metal carriers. These carriers hold the sample between two thin metal discs or grids.</obo:IAO_0000115>
+        <obo:IAO_0000119></obo:IAO_0000119>
+        <rdfs:label xml:lang="en">High Pressure Freezing &apos;Sandwich Array&apos; for CryoEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>The planchettes are small pieces of metal that the grid and sample are sandwiched in between. Pre-treatment of the planchettes has significance.</obo:IAO_0000115>
+        <obo:IAO_0000119>Utz Ermel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">CryoEM Planchette</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000953"/>
+        <rdfs:label xml:lang="en">High Pressure Freezing Planchette Assembly for CryoEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001631"/>
+        <obo:IAO_0000115>Cryo-electron tomography (CryoET) imaging involves acquiring a series of images of a frozen-hydrated biological specimen at different tilt angles relative to the electron beam. These images are then used to reconstruct a three-dimensional (3D) tomographic volume of the specimen. 
+
+This is an imaging assay that acts on a material entity input specimen (a cryo-EM grid containing a vitrified specimen) to generate an information artifact (a &apos;tilt-series&apos; of images). 
+
+The specimen is initially imaged at a zero-degree tilt angle, where the electron beam is perpendicular to the sample surface. This provides a reference image of the specimen&apos;s structure.
+
+The specimen is then tilted at various angles relative to the electron beam. Typically, tilt angles ranging from -60 to +60 degrees are used (depending on the microscope&apos;s capabilities and the desired coverage of the specimen). At each tilt angle, a series of images are acquired by scanning the electron beam across the specimen&apos;s area of interest. During tilt series acquisition, parameters such as electron dose, defocus, and pixel size are carefully controlled to optimize image quality while minimizing radiation damage to the specimen.</obo:IAO_0000115>
+        <obo:IAO_0000119>ChatGPT + editing</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">CryoET imaging assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
+        <rdfs:label xml:lang="en">Tilt Series</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000015"/>
+        <rdfs:label xml:lang="en">CryoET Tilt Series</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:label xml:lang="en">TEM Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
+        <rdfs:label xml:lang="en">Image Motion Correction Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
+        <rdfs:label xml:lang="en">Tomographic Alignment Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000016"/>
+        <rdfs:label xml:lang="en">Aligned CryoET Tilt Series</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003355"/>
+        <rdfs:label xml:lang="en">Tomogram Reconstruction Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0003327"/>
+        <rdfs:label xml:lang="en">volumetric image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000022"/>
+        <rdfs:label xml:lang="en">CryoET Tomogram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115>A data item that can be localized within the content of another data item and also provides additional information about the content referenced by the annotation. (e.g., a NLP annotation on a passage of text, a bounding box on an image).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">data item annotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000025"/>
+        <obo:IAO_0000115>A data item annotation constructed by adding information to a delineated a subvolume within a volumemetric image.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">volumetric image annotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000026"/>
+        <obo:IAO_0000115>A volumetric image annotation providing additional information about a subvolume within a CryoET tomogram.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CryoET tomogram annotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:label xml:lang="en">annotation set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000028"/>
+        <rdfs:label xml:lang="en">volumetric image annotation set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRYOETO_0000029"/>
+        <rdfs:label xml:lang="en">tomogram annotation set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000073"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000953 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000953"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000990"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001631"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001953 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001953"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003327"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003355"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+
