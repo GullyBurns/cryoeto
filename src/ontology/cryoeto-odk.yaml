@@ -2,6 +2,8 @@ id: cryoeto
 title: Cryo Electron Tomography Ontology 
 github_org: GullyBurns
 repo: cryoeto
+documentation:
+  documentation_system: mkdocs
 release_artefacts:
   - base
   - full
