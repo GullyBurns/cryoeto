@@ -1,0 +1,27 @@
+id: cryoeto
+title: Cryo Electron Tomography Ontology 
+github_org: GullyBurns
+repo: cryoeto
+release_artefacts:
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - json
+import_group:
+  products:
+    - id: bfo
+    - id: cob
+    - id: iao
+    - id: obi
+      module_type: filter
+      module_type: filter
+robot_java_args: "-Xmx8G"
+robot_report:
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
+  report_on:
+    - edit
