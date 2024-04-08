@@ -2413,6 +2413,25 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0200000",
+      "lbl" : "data transformation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process that produces output data from input data."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "data analysis"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "data processing"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Branch editors"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0400169",
       "lbl" : "microscope",
       "type" : "CLASS",
@@ -2995,11 +3014,15 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0003355",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0200000"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0100051",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0200000",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0400169",
       "pred" : "is_a",

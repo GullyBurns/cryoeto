@@ -34,6 +34,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0003327>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0003355>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0400169>))
 Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -84,6 +85,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000070> "OBI branch derived"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000070> "assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/OBI_0000011>)
+DisjointClasses(<http://purl.obolibrary.org/obo/OBI_0000070> <http://purl.obolibrary.org/obo/OBI_0200000>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000073> (sample preparation for assay)
 
@@ -183,7 +185,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0003327> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0003355> "The process of deriving a data item from an image data set using computer algorithms. The produced data item can be an image data set, data measurement, or any other data item.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0003355> "image data set analysis")
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0003355> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0003355> <http://purl.obolibrary.org/obo/OBI_0200000>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0100051> (specimen)
 
@@ -191,6 +193,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0100051> "GROUP: OBI Biomaterial Branch"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0100051> "specimen"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100051> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0200000> (data transformation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0200000> "A planned process that produces output data from input data."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0200000> "data analysis"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0200000> "data processing"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0200000> "Branch editors"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0200000> "data transformation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0200000> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0400169> (microscope)
 
