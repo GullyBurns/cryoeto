@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/cryoeto/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/imports/obi_import.owl>
+<http://purl.obolibrary.org/obo/cryoeto/releases/2024-04-08/imports/obi_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-01-09/obi.owl>)
-Annotation(owl:versionInfo "2024-03-28")
+Annotation(owl:versionInfo "2024-04-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
@@ -28,6 +28,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000832>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000990>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001631>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0003327>))
@@ -150,6 +151,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000990> "A microscope that produces an image of an object by targeting it with an electron beam")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000990> "electron microscope")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000990> <http://purl.obolibrary.org/obo/OBI_0400169>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0001048> (digital camera)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001048> "An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0001048> "http://en.wikipedia.org/wiki/Digital_camera")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001048> "digital camera")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001048> <http://purl.obolibrary.org/obo/OBI_0000398>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001631> (electron microscopy imaging assay)
 

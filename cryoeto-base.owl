@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cryoeto/cryoeto-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/cryoeto-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-04-08/cryoeto-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cryo Electron Tomography Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-28</owl:versionInfo>
+        <owl:versionInfo>2024-04-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -343,6 +343,17 @@ The specimen is then tilted at various angles relative to the electron beam. Typ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001048"/>
+        <obo:IAO_0000115>An electron microscopy camera capable of measuring electron incidences without relying on photon scintillation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Utz Ermel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Direct Electron Detector</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CRYOETO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000024">
@@ -448,6 +459,12 @@ The specimen is then tilted at various angles relative to the electron beam. Typ
     <!-- http://purl.obolibrary.org/obo/OBI_0000990 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000990"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048"/>
     
 
 

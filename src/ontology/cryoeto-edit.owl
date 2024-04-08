@@ -40,6 +40,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000026>))
@@ -238,6 +239,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000021> <http://purl.obolibr
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000022> "volumetric image data set"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000022> <http://purl.obolibrary.org/obo/OBI_0003327>)
+
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000023> (Direct Electron Detector)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000023> "An electron microscopy camera capable of measuring electron incidences without relying on photon scintillation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/CRYOETO_0000023> "Utz Ermel")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000023> "Direct Electron Detector"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000023> <http://purl.obolibrary.org/obo/OBI_0001048>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000024> (CryoET Tomogram)
 

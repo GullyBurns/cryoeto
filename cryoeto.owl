@@ -14,11 +14,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cryoeto.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/cryoeto.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-04-08/cryoeto.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Cryo Electron Tomography Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-28</owl:versionInfo>
+        <owl:versionInfo>2024-04-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2025,6 +2025,17 @@ The specimen is then tilted at various angles relative to the electron beam. Typ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001048"/>
+        <obo:IAO_0000115>An electron microscopy camera capable of measuring electron incidences without relying on photon scintillation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Utz Ermel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Direct Electron Detector</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CRYOETO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000024">
@@ -2460,6 +2471,17 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
         <obo:IAO_0000115>A microscope that produces an image of an object by targeting it with an electron beam</obo:IAO_0000115>
         <rdfs:label>electron microscope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000398"/>
+        <obo:IAO_0000115>An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Digital_camera</obo:IAO_0000119>
+        <rdfs:label>digital camera</rdfs:label>
     </owl:Class>
     
 

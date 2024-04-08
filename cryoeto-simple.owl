@@ -9,11 +9,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cryoeto/cryoeto-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/cryoeto-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cryoeto/releases/2024-04-08/cryoeto-simple.owl"/>
         <terms:description>None</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>Cryo Electron Tomography Ontology</terms:title>
-        <owl:versionInfo>2024-03-28</owl:versionInfo>
+        <owl:versionInfo>2024-04-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -392,6 +392,16 @@ The specimen is then tilted at various angles relative to the electron beam. Typ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000022">
         <rdfs:label xml:lang="en">volumetric image data set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRYOETO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRYOETO_0000023">
+        <obo:IAO_0000115>An electron microscopy camera capable of measuring electron incidences without relying on photon scintillation.</obo:IAO_0000115>
+        <obo:IAO_0000119>Utz Ermel</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Direct Electron Detector</rdfs:label>
     </owl:Class>
     
 

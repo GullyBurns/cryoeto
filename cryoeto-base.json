@@ -16,9 +16,9 @@
         "val" : "Cryo Electron Tomography Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-28"
+        "val" : "2024-04-08"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/cryoeto/releases/2024-03-28/cryoeto-base.json"
+      "version" : "http://purl.obolibrary.org/obo/cryoeto/releases/2024-04-08/cryoeto-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000000",
@@ -203,6 +203,19 @@
       "lbl" : "volumetric image data set",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000023",
+      "lbl" : "Direct Electron Detector",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An electron microscopy camera capable of measuring electron incidences without relying on photon scintillation."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Utz Ermel"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CRYOETO_0000024",
       "lbl" : "CryoET Tomogram",
       "type" : "CLASS"
@@ -334,6 +347,10 @@
       "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000022",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0003327"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001048"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CRYOETO_0000024",
       "pred" : "is_a",
