@@ -32,7 +32,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000014>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000018>))
@@ -48,6 +47,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CRYOETO_0000032>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -122,6 +123,7 @@ The rapid freezing process prevents water molecules from organizing into ice cry
 By preserving samples in a vitrified state, cryo-EM and cryo-ET allow researchers to visualize biological structures at high resolution and in near-native conditions, providing valuable insights into their molecular architecture and function.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/CRYOETO_0000004> "ChatGPT + editing")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000004> "Vitrification for Electron Microscopy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000004> <http://purl.obolibrary.org/obo/OBI_0000073>)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000004> <http://purl.obolibrary.org/obo/OBI_0001953>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000005> (Mounting specimen on TEM Grid)
@@ -200,19 +202,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000014> "CryoET imaging assay"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000014> <http://purl.obolibrary.org/obo/OBI_0001631>)
 
-# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000015> (Tilt Series)
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000016> (TEM Tilt Series)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000015> "Tilt Series"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000015> <http://purl.obolibrary.org/obo/OBI_0003327>)
-
-# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000016> (CryoET Tilt Series)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000016> "CryoET Tilt Series"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000016> <http://purl.obolibrary.org/obo/CRYOETO_0000015>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000016> "A TEM tilt series is a collection of two-dimensional images acquired using transmission electron microscopy of the same object, each taken at a different angle of tilt relative to the electron beam. By tilting the specimen and capturing images at various angles, a tilt series provides information about the three-dimensional structure of the object.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000016> "TEM Tilt Series"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000016> <http://purl.obolibrary.org/obo/OBI_0003327>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000017> (TEM Image)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000017> "An image taken from a transmission electron microscope (TEM) using a direct electron detector.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000017> "TEM Image"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000017> <http://purl.obolibrary.org/obo/IAO_0000101>)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000017> <http://purl.obolibrary.org/obo/IAO_0000109>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000018> (Image Motion Correction Process)
@@ -225,9 +225,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000018> <http://purl.obolibr
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000019> "Tomographic Alignment Process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000019> <http://purl.obolibrary.org/obo/OBI_0003355>)
 
-# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000020> (Aligned CryoET Tilt Series)
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000020> (Aligned TEM Tilt Series)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000020> "Aligned CryoET Tilt Series"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000020> "A TEM Tilt Series that have been processed for alignment correction")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000020> "Aligned TEM Tilt Series"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000020> <http://purl.obolibrary.org/obo/CRYOETO_0000016>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000021> (Tomogram Reconstruction Process)
@@ -237,19 +238,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000021> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000022> (volumetric image data set)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000022> "An image data set that is comprised of 3D images using voxels.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000022> "volumetric image data set"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000022> <http://purl.obolibrary.org/obo/OBI_0003327>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000023> (Direct Electron Detector)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000023> "An electron microscopy camera capable of measuring electron incidences without relying on photon scintillation.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000023> "An image generated from a transmission electron microscope (TEM) using a direct electron detector.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/CRYOETO_0000023> "Utz Ermel")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000023> "Direct Electron Detector"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000023> <http://purl.obolibrary.org/obo/OBI_0001048>)
 
-# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000024> (CryoET Tomogram)
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000024> (TEM Tomogram)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000024> "CryoET Tomogram"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000024> "A 3-dimensional imaging dataset (made up of voxels) that was constructed through called tomographic reconstruction from a series of tilted Transmission Electron Microscopy images (called a 'Tilt Series').")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000024> "TEM Tomogram")
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000024> <http://purl.obolibrary.org/obo/CRYOETO_0000022>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000025> (data item annotation)
@@ -264,26 +268,42 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000026> "volumetric image annotation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000026> <http://purl.obolibrary.org/obo/CRYOETO_0000025>)
 
-# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000027> (CryoET tomogram annotation)
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000027> (TEM tomogram annotation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000027> "A volumetric image annotation providing additional information about a subvolume within a CryoET tomogram.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000027> "CryoET tomogram annotation"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000027> "TEM tomogram annotation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000027> <http://purl.obolibrary.org/obo/CRYOETO_0000026>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000028> (annotation set)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000028> "A data set consisting of data item annotations")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000028> "annotation set"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000028> <http://purl.obolibrary.org/obo/IAO_0000100>)
 
 # Class: <http://purl.obolibrary.org/obo/CRYOETO_0000029> (volumetric image annotation set)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000029> "A data set consisting of volumetric image annotations")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000029> "volumetric image annotation set"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000029> <http://purl.obolibrary.org/obo/CRYOETO_0000028>)
 
-# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000030> (tomogram annotation set)
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000030> (TEM Tomogram Annotation Set)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000030> "tomogram annotation set"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000030> "A data set consisting of CryoET tomogram annotations")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000030> "TEM Tomogram Annotation Set")
 SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000030> <http://purl.obolibrary.org/obo/CRYOETO_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000031> (TEM Tomogram Annotation Process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000031> "The process of generating annotations over a TEM tomogram. Typically, each annotation is localized in the tomogram by defining a 3d-volume within the tomogram and then labeled with additional data.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000031> "TEM Tomogram Annotation Process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000031> <http://purl.obolibrary.org/obo/CRYOETO_0000032>)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000031> <http://purl.obolibrary.org/obo/OBI_0003355>)
+
+# Class: <http://purl.obolibrary.org/obo/CRYOETO_0000032> (data annotation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CRYOETO_0000032> "A planned process that generates an 'data item annotation' or (CRYOETO_0000025) an 'annotation set' (CRYOETO_0000028)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOETO_0000032> "data annotation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CRYOETO_0000032> <http://purl.obolibrary.org/obo/OBI_0200000>)
 
 
 )

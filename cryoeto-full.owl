@@ -2476,6 +2476,17 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000115>A planed process with objective of obtaining quantified values from an image.</obo:IAO_0000115>
+        <obo:IAO_0000119>MO_928: feature_extraction</obo:IAO_0000119>
+        <rdfs:label>feature extraction</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">

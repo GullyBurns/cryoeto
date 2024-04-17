@@ -28,6 +28,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000832>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000968>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000990>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001631>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0001953>))
@@ -153,6 +154,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000968> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000990> "A microscope that produces an image of an object by targeting it with an electron beam")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000990> "electron microscope")
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000990> <http://purl.obolibrary.org/obo/OBI_0400169>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0001028> (feature extraction)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001028> "A planed process with objective of obtaining quantified values from an image.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0001028> "MO_928: feature_extraction")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001028> "feature extraction")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0001028> <http://purl.obolibrary.org/obo/OBI_0200000>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0001048> (digital camera)
 
